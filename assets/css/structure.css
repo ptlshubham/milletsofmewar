@@ -876,6 +876,18 @@ body.nice-scroll:not(.layout-boxed) {
 		margin-right: 0;
 	}
 }
+@media only screen and (max-width:1990px){
+	#Top_bar #logo img {
+		vertical-align: middle;
+		max-height: 150% !important;
+	}
+}
+/* @media screen and (min-width:1920px) {
+	#Top_bar #logo img {
+		vertical-align: middle;
+		max-height: 150% !important;
+	}
+} */
 /* #Filters
 ================================================== */
 
