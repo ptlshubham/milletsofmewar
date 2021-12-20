@@ -862,7 +862,7 @@
 	}
 	#Top_bar.is-sticky #logo img.logo-sticky {
 		display: inline;
-		max-height: 50px;
+		max-height: 55px;
 	}
 	#Top_bar.is-sticky .menu_wrapper {
 		clear: none
@@ -2076,7 +2076,7 @@ h6 {
 		top: 40px;
 	}
 	.mobile-header-mini #Top_bar #logo {
-		height: 50px !important;
+		height: 75px !important;
 		line-height: 50px !important;
 		margin: 5px 0;
 	}
