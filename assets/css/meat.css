@@ -2381,7 +2381,8 @@ p.flv_align_right, div.flv_align_right {
 		display: none
 	}
 	#Top_bar #logo img.logo-mobile {
-		display: inline-block
+		display: inline-block;
+		max-height: 102% !important;
 	}
 	.logo-overflow #Top_bar .logo {
 		height: auto!important
