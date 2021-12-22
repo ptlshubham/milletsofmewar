@@ -29,6 +29,7 @@
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,500,700,700italic'>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel='stylesheet' href='assets/css/global.css'>
     <link rel='stylesheet' href='assets/css/structure.css'>
     <link rel='stylesheet' href='assets/css/meat.css'>
@@ -133,7 +134,8 @@
                                 <div class="mcb-wrap-inner">
                                     <div class="column mcb-column one column_column">
                                         <div class="column_attr clearfix align_center">
-                                            <h2>Puffed Amaranth</h2>
+                                            <label id="selval" style="font-size: 45px;line-height: 55px;font-weight: 400;letter-spacing: 0px;
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Puffed Amaranth</label>
                                             <!-- <h6>PORTTITOR EROS CURSUS LECTUS, PELLENTESQUE EGET,</h6> -->
                                         </div>
                                     </div>
@@ -170,8 +172,9 @@
                                                 pharetra vel.
                                             </p>
                                             <hr class="no_line" style="margin:0 auto 20px">
-                                            <a class="button button_size_2 button_theme button_js" href="#"><span
-                                                    class="button_label">SEE ALL PRODUCTS</span></a>
+                                            <a class="button button_size_2 button_js" data-toggle="modal"
+                                            data-target="#exampleModalCenter" ><span class="button_label" 
+                                            onclick="buynow()" style="background-color: #9e8655;">Buy Now </span></a>
                                         </div>
                                     </div>
                                     <div class="column mcb-column one column_divider">
@@ -208,6 +211,82 @@
                                             </div>
                                         </div>
                                     </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <div class="column mcb-column one column_column">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="column_attr clearfix align_center">
+                                                <h2>For More Enquiry</h2>
+                                                <div
+                                                    class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                                    <div class="image_wrapper">
+                                                        <img class="scale-with-grid"
+                                                            src="assets/images/home_meat_sep1.png">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="wrap mcb-wrap one valign-top clearfix">
+                                            <div class="mcb-wrap-inner">
+                                                <div class="column mcb-column one column_column">
+                                                    <div class="column_attr clearfix align_center">
+                                                        <div id="contactWrapper">
+                                                            <form id="contactform">
+                                                                <!-- One Second (1/2) Column -->
+                                                                <div class="column one-second">
+                                                                    <input placeholder="Your name" type="text"
+                                                                        name="name" id="name" size="40"
+                                                                        aria-required="true" aria-invalid="false" />
+                                                                </div>
+                                                                <!-- One Second (1/2) Column -->
+                                                                <div class="column one-second">
+                                                                    <input placeholder="Your e-mail" type="email"
+                                                                        name="email" id="email" size="40"
+                                                                        aria-required="true" aria-invalid="false" />
+                                                                </div>
+                                                                <div class="column one">
+                                                                    <input placeholder="Product" type="text"
+                                                                        name="subject" id="subject" size="40"
+                                                                        aria-invalid="false" value="" />
+                                                                </div>
+                                                                <div class="column one">
+                                                                    <textarea placeholder="Message" name="body"
+                                                                        id="body" style="width:100%;" rows="3"
+                                                                        aria-invalid="false"></textarea>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script type="text/javascript">
+                                        function buynow() {
+                                            var sel = document.getElementById('selval').textContent;
+                                            document.getElementById('subject').value = sel;
+
+                                        }
+                                    </script>
+                                    <div class="modal-footer " style="border-top:none !important">
+                                        <a class="button button_size_2 button_js" style="color: white;"
+                                            data-dismiss="modal"><span class="button_label">Close</span></a>
+                                        <a class="button button_size_2 button_js"
+                                            style="background-color: #b99d66;color: white;" data-dismiss="modal"><span
+                                                class="button_label">Send Enquiry</span></a>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -351,6 +430,7 @@
     <script src="assets/js/animations/animations.js"></script>
     <script src="assets/js/translate3d.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
 
