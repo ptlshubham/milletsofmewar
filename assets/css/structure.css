@@ -7459,10 +7459,26 @@ html, body {
 		width: 100%
 	}
 }
+
+	.fafa-icon {
+		font-size: 45px;
+		text-align: center;
+		color: #b99d66;
+	}
 /* Retina | iPad ----------------------------------------------------------------------------------------------- Retina | iPad */
 
 @media only screen and (max-device-width: 1024px) {
 	html.ios, .ios .section.bg-cover {
 		background-attachment: scroll!important
 	}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 812px) 
+{
+.star{
+font-size: 20px !important;
+}
+
 }
