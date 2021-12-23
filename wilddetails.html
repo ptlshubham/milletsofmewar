@@ -172,6 +172,26 @@
                                                 pharetra vel.
                                             </p>
                                             <hr class="no_line" style="margin:0 auto 20px">
+                                            <h4>List of products you need</h4>
+                                            <hr class="no_line" style="margin:0 auto 20px">
+                                            <ul class="list_check">
+                                                <li>
+                                                    Suspendisse a on felis.
+                                                </li>
+                                                <li>
+                                                    Quisque lorem tortor sed.
+                                                </li>
+                                                <li>
+                                                    Quisque cursus et, porttitor.
+                                                </li>
+                                                <li>
+                                                    Nulla ipsum dolor lacus, suscipit.
+                                                </li>
+                                                <li>
+                                                    Suspendisse a pellent
+                                                </li>
+                                            </ul>
+                                            <hr class="no_line" style="margin:0 auto 20px">
                                             <a class="button button_size_2 button_js" data-toggle="modal"
                                             data-target="#exampleModalCenter" ><span class="button_label" 
                                             onclick="buynow()" style="background-color: #9e8655;">Buy Now </span></a>
@@ -244,7 +264,7 @@
                                                 <div class="column mcb-column one column_column">
                                                     <div class="column_attr clearfix align_center">
                                                         <div id="contactWrapper">
-                                                            <form id="contactform">
+                                                            <form id="contactform" method="post" action="mail.php">
                                                                 <!-- One Second (1/2) Column -->
                                                                 <div class="column one-second">
                                                                     <input placeholder="Your name" type="text"
@@ -280,13 +300,16 @@
                                             document.getElementById('subject').value = sel;
 
                                         }
+                                        function sendinqury() {
+                                         alert("Mail Sent!");
+                                        }
                                     </script>
                                     <div class="modal-footer " style="border-top:none !important">
                                         <a class="button button_size_2 button_js" style="color: white;"
                                             data-dismiss="modal"><span class="button_label">Close</span></a>
                                         <a class="button button_size_2 button_js"
                                             style="background-color: #b99d66;color: white;" data-dismiss="modal"><span
-                                                class="button_label">Send Enquiry</span></a>
+                                                class="button_label" onclick="sendinqury()">Send Enquiry</span></a>
 
                                     </div>
                                 </div>
