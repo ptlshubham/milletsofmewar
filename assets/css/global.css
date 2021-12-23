@@ -2995,7 +2995,7 @@ ul.list_mixed, ul.list_check, ul.list_star, ul.list_idea {
 	margin-left: 0
 }
 ul.list_mixed li, ul.list_check li, ul.list_star li, ul.list_idea li {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	position: relative;
 	list-style: none;
 	padding-left: 50px;
