@@ -191,25 +191,13 @@
                                                     <h4>Ingredients:</h4>
                                                     <ul class="list_check" style="margin-bottom: 0px !important;">
                                                         <li>
+                                                            Peanuts (32%)
+                                                        </li>
+                                                        <li>
                                                             Whole Wheat Flour
                                                         </li>
                                                         <li>
-                                                            Brown Sugar
-                                                        </li>
-                                                        <li>
                                                             Sunflower Oil
-                                                        </li>
-                                                        <li>
-                                                            Amaranth
-                                                        </li>
-                                                        <li>
-                                                            Bajara Oats
-                                                        </li>
-                                                        <li>
-                                                            Cornflakes
-                                                        </li>
-                                                        <li>
-                                                            Flex Seeds
                                                         </li>
                                                         <li>
                                                             Rock Salt
@@ -227,16 +215,13 @@
                                                     <h4>Nutrition:</h4>
                                                     <ul class="list_check" style="margin-bottom: 0px !important;">
                                                         <li>
-                                                            <b>Carbs-</b>75.65g
+                                                            <b>Carbs-</b>77.05g
                                                         </li>
                                                         <li>
-                                                            <b>Protein-</b>3.22g
-                                                        </li>
+                                                            <b>Protein-</b>10.75g
+                                                        </li>  
                                                         <li>
-                                                            <b>Energy-</b>325.92 kcal
-                                                        </li>   
-                                                        <li>
-                                                            <b>Fat-</b>7.16g
+                                                            <b>Fat-</b>17.77g
                                                         </li>
                                                     </ul>
                                             <hr class="no_line" style="margin:0 auto 20px">
@@ -247,7 +232,7 @@
                                     </div>
                                     <div class="column mcb-column one column_divider">
                                         <hr class="no_line" style="margin:0 auto 60px">
-                                    </div>
+                                    </div>  
                                     <!-- <div class="column mcb-column three-fifth column_column">
                                         <div class="column_attr clearfix" style="padding:30px 10% 0 0">
                                             <h4>A method of preparing</h4>
@@ -279,10 +264,12 @@
                                             </div>
                                         </div>
                                     </div> -->
+    
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    </div>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
                             aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal modal-dialog-centered" role="document">
                                 <div class="modal-content">
@@ -310,7 +297,7 @@
                                                 <div class="column mcb-column one column_column">
                                                     <div class="column_attr clearfix align_center">
                                                         <div id="contactWrapper">
-                                                            <form id="contactform">
+                                                            <form id="contactform" method="post" action="mail.php">
                                                                 <!-- One Second (1/2) Column -->
                                                                 <div class="column one-second">
                                                                     <input placeholder="Your name" type="text"
@@ -346,22 +333,27 @@
                                             document.getElementById('subject').value = sel;
 
                                         }
+                                        function sendinqury() {
+                                         alert("Mail Sent!");
+                                        }
                                     </script>
                                     <div class="modal-footer " style="border-top:none !important">
                                         <a class="button button_size_2 button_js" style="color: white;"
                                             data-dismiss="modal"><span class="button_label">Close</span></a>
                                         <a class="button button_size_2 button_js"
                                             style="background-color: #b99d66;color: white;" data-dismiss="modal"><span
-                                                class="button_label">Send Enquiry</span></a>
+                                                class="button_label" onclick="sendinqury()">Send Enquiry</span></a>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
+    </div>
+    
         <footer id="Footer" class="clearfix" style="background-color: #392b1c;">
             <div class="widgets_wrapper" style="padding:20px 0 20px">
                 <div class="container">
@@ -478,8 +470,6 @@
                 </div>
             </div>
         </footer>
-    </div>
-
     <!-- mobile menu -->
     <div id="Side_slide" class="right dark" data-width="250">
         <div class="close-wrapper">
@@ -500,6 +490,7 @@
     <script src="assets/js/scripts.js"></script>
     <script src="assets/plugins/bootstrap-4.6.1-dist/js/bootstrap.min.js"></script>
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
 </body>
 
 </html>
