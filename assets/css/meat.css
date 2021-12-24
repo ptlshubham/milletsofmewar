@@ -1228,7 +1228,7 @@ a.button, a.tp-button {
 	color: #fff;
 }
 a.button_theme, a.tp-button.button_theme, button, input[type="submit"], input[type="reset"], input[type="button"] {
-	background-color: #b99d66;
+	background-color: #141413;
 	color: #fff;
 }
 .button-stroke a.button.button_theme:not(.action_button), .button-stroke a.button.button_theme .button_icon i, .button-stroke a.tp-button.button_theme, .button-stroke button, .button-stroke input[type="submit"], .button-stroke input[type="reset"], .button-stroke input[type="button"] {
