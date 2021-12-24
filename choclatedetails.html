@@ -315,9 +315,14 @@
                                                                                 size="40" aria-required="true"
                                                                                 aria-invalid="false" />
                                                                         </div>
-                                                                        <div class="column one">
+                                                                        <div class="column one-second">
                                                                             <input placeholder="Product" type="text"
                                                                                 name="subject" id="subject" size="40"
+                                                                                aria-invalid="false" value="" />
+                                                                        </div>
+                                                                        <div class="column one-second">
+                                                                            <input placeholder="Quantity" type="number"
+                                                                                name="quantity" id="quantity" size="40"
                                                                                 aria-invalid="false" value="" />
                                                                         </div>
                                                                         <div class="column one">
@@ -336,6 +341,7 @@
                                                 function buynow() {
                                                     var sel = document.getElementById('selval').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;    
 
                                                 }
                                                 function sendinqury() {
