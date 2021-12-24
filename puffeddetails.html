@@ -144,8 +144,7 @@
                                         <div class="column_attr clearfix align_center">
                                             <label id="selval"
                                                 style="font-size: 45px;line-height: 55px;font-weight: 400;letter-spacing: 0px;
-                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Puffed
-                                                Amaranth</label>
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Puffed Amaranth</label>
                                             <!-- <h6>PORTTITOR EROS CURSUS LECTUS, PELLENTESQUE EGET,</h6> -->
                                         </div>
                                     </div>
@@ -317,9 +316,14 @@
                                                                                 size="40" aria-required="true"
                                                                                 aria-invalid="false" />
                                                                         </div>
-                                                                        <div class="column one">
+                                                                        <div class="column one-second">
                                                                             <input placeholder="Product" type="text"
                                                                                 name="subject" id="subject" size="40"
+                                                                                aria-invalid="false" value="" />
+                                                                        </div>
+                                                                        <div class="column one-second">
+                                                                            <input placeholder="Quantity" type="number"
+                                                                                name="quantity" id="quantity" size="40"
                                                                                 aria-invalid="false" value="" />
                                                                         </div>
                                                                         <div class="column one">
@@ -338,6 +342,7 @@
                                                 function buynow() {
                                                     var sel = document.getElementById('selval').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
 
                                                 }
                                                 function sendinqury() {

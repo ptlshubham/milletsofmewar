@@ -332,8 +332,7 @@
                                             <div class="column_attr clearfix align_center" style="padding:0 1%;">
                                                 <label id="selval4"
                                                     style="font-size: 21px;line-height: 21px;font-weight: 400;letter-spacing: 0px;
-                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Puffed
-                                                    Amaranth</label>
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Puffed Amaranth</label>
                                                 <hr class="no_line" style="margin:0 auto 5px">
                                                 <div style="border: 5px solid #f7f4ef; line-height: 0;">
                                                     <div
@@ -376,8 +375,7 @@
                                             <div class="column_attr clearfix align_center" style="padding:0 1%;">
                                                 <label id="selval5"
                                                     style="font-size: 21px;line-height: 21px;font-weight: 400;letter-spacing: 0px;
-                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Multigrain
-                                                    Cookies</label>
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Multigrain Cookies</label>
                                                 <hr class="no_line" style="margin:0 auto 5px">
                                                 <div style="border: 5px solid #f7f4ef; line-height: 0;">
                                                     <div
@@ -419,8 +417,7 @@
                                             <div class="column_attr clearfix align_center" style="padding:0 1%;">
                                                 <label id="selval6"
                                                     style="font-size: 21px;line-height: 21px;font-weight: 400;letter-spacing: 0px;
-                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Pearl
-                                                    Millets Cookies</label>
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Pearl Millets Cookies</label>
                                                 <hr class="no_line" style="margin:0 auto 5px">
                                                 <div style="border: 5px solid #f7f4ef; line-height: 0;">
                                                     <div
@@ -462,8 +459,7 @@
                                             <div class="column_attr clearfix align_center" style="padding:0 1%;">
                                                 <label id="selval7"
                                                     style="font-size: 21px;line-height: 21px;font-weight: 400;letter-spacing: 0px;
-                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Peanut
-                                                    Butter Cookies</label>
+                                                    font-family: 'Lora', Arial, Tahoma, sans-serif;color: #2f2212;margin-bottom: 15px;">Peanut Butter Cookies</label>
                                                 <hr class="no_line" style="margin:0 auto 5px">
                                                 <div style="border: 5px solid #f7f4ef; line-height: 0;">
                                                     <div
@@ -549,9 +545,14 @@
                                                                         name="email" id="email" size="40"
                                                                         aria-required="true" aria-invalid="false" />
                                                                 </div>
-                                                                <div class="column one">
+                                                                <div class="column one-second">
                                                                     <input placeholder="Product" type="text"
                                                                         name="subject" id="subject" size="40"
+                                                                        aria-invalid="false" value="" />
+                                                                </div>
+                                                                <div class="column one-second">
+                                                                    <input placeholder="Quantity" type="number"
+                                                                        name="quantity" id="quantity" size="40"
                                                                         aria-invalid="false" value="" />
                                                                 </div>
                                                                 <div class="column one">
@@ -569,32 +570,39 @@
                                             function buynow(val) {
 
                                                 if (val == 1) {
-                                                    var sel = document.getElementById('selval1').textContent;
+                                                    var sel = document.getElementById('selval1').textContent ;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else if (val == 2) {
                                                     var sel = document.getElementById('selval2').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else if (val == 3) {
                                                     var sel = document.getElementById('selval3').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else if (val == 4) {
                                                     var sel = document.getElementById('selval4').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else if (val == 5) {
                                                     var sel = document.getElementById('selval5').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else if (val == 6) {
                                                     var sel = document.getElementById('selval6').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
                                                 else {
                                                     var sel = document.getElementById('selval7').textContent;
                                                     document.getElementById('subject').value = sel;
+                                                    document.getElementById('quantity').value=1;
                                                 }
 
                                             }
